@@ -64,12 +64,12 @@ function productQuestions() {
             ]).then(function (answers) {
                 var query = "SELECT * FROM products WHERE ?";
                 connection.query(query, {
-                    id: answers.chosenId
+                    item_id: answers.chosenId
                 }, function (err, res) {
 
 
-
-
+                    
+                    // console.log(res[0]);
                     var amtinStock = res[0].stock_quantity;
                     var amtBought = answers.quantityBought;
 
@@ -88,7 +88,7 @@ function productQuestions() {
 
                                 },
                                 {
-                                    id: answers.chosenId
+                                    item_id: answers.chosenId
                                 }
 
                             ],
@@ -104,7 +104,7 @@ function productQuestions() {
                                 console.log("\n\r");
                                 console.log("Thank you for shopping with us.");
                                 console.log("==============================================");
-                                products();
+                                inventory();
 
                             }
                         );
@@ -114,7 +114,7 @@ function productQuestions() {
                         console.log("Not enough of that product");
                         console.log("\n\r");
                         console.log("==============================================");
-                        products();
+                        inventory();
 
                     }
 
