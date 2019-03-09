@@ -12,5 +12,5 @@ primary key (item_id)
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("cute_dress", "apparel", 22.95, 8);
+VALUES ("the-boring-husband", "books-autobiography", 1.00, 1262);
 
