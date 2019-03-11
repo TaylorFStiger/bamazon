@@ -11,4 +11,4 @@ Week 12  "Bamazon" MySQL Project
    * If the store _does_ have enough of the product, it will fulfill the customer's order.
    * This means updating the SQL database to reflect the remaining quantity.
    * Once the update goes through, it shows the customer the total cost of their purchase.
- ![App Image](assets/image/customerbuyingsomething.GIF)
+ ![App Image](images/customerbuyingsomething.GIF)
